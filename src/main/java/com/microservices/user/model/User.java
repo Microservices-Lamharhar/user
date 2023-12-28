@@ -1,11 +1,8 @@
-package com.microservices.user;
+package com.microservices.user.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
-@Entity
+@Entity @Table(name = "USER_TABLE")
 public class User {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
